@@ -1,0 +1,9 @@
+<table class="tftable">
+  <tr><th>Nom</th><th>Roll Café</th><th>Roll Bouilloire</th><th>Roll Croco</th><th>Roll base</th><th>Roll Autres</th><th>Win Café</th><th>Win Bouilloire</th><th>Win Croco</th><th>Win base</th><th>Win autre</th><th>Winrate</th>
+  <tr *ngFor="let player of players">
+	<td>{{player.name}}</td> <td>{{player.roll_cofee}}</td> <td>{{player.roll_water}}</td> <td>{{player.roll_croco}}</td> <td>{{player.roll_base}}</td> <td>{{player.roll_other}}</td> 
+	<td>{{player.win_cofee}}</td> <td>{{player.win_water}}</td> <td>{{player.win_croco}}</td> <td>{{player.win_base}}</td> <td>{{player.win_other}}</td> <td>{{player.winrate}}</td> 
+
+  </tr>
+</table>
+
