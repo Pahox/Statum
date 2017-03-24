@@ -7,4 +7,3 @@ Statum is the **perfect** solution for storing and displaying your everyday dice
 * Who's gonna bring coffee to the team
 * Who's gonna have the poor chair in the afternoon meeting
 * ...
-
