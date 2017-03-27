@@ -1,0 +1,52 @@
+<div *ngIf="player">
+	<h2>{{player.name}} properties</h2>
+	
+	<table>
+		<tr>
+			<td><label>Nom: </label></td>
+			<td>{{player.name}}</td>
+		</tr>
+		<tr>
+			<td><label>Roll café: </label></td>
+			<td><input [(ngModel)]="player.roll_cofee" placeholder="roll_cofee" /></td>
+			
+			<td><label>Win café: </label></td>
+			<td><input [(ngModel)]="player.win_cofee" placeholder="win_cofee" /></td>
+		</tr>
+
+		<tr>
+			<td><label>Roll bouilloire: </label></td>
+			<td><input [(ngModel)]="player.roll_water" placeholder="roll_water" /></td>
+			
+			<td><label>Win bouilloire: </label></td>
+			<td><input [(ngModel)]="player.win_water" placeholder="win_water" /></td>
+		</tr>
+		<tr>
+			<td><label>Roll Croco: </label></td>
+			<td><input [(ngModel)]="player.roll_croco" placeholder="roll_croco" /></td>
+			
+			<td><label>Win Croco: </label></td>
+			<td><input [(ngModel)]="player.win_croco" placeholder="win_croco" /></td>			
+		</tr>
+		<tr>
+			<td><label>Roll base: </label></td>
+			<td><input [(ngModel)]="player.roll_base" placeholder="roll_base" /></td>
+			
+			<td><label>Win base: </label></td>
+			<td><input [(ngModel)]="player.win_base" placeholder="win_base" /></td>		
+		</tr>
+		<tr>
+			<td><label>Roll autre: </label></td>
+			<td><input [(ngModel)]="player.roll_other" placeholder="roll_other" /></td>
+			
+			<td><label>Win autre: </label></td>
+			<td><input [(ngModel)]="player.win_other" placeholder="win_other" /></td>
+			
+		</tr>
+	
+		<tr>
+			<td><label>Winrate: </label></td>
+			<td>{{player.winrate}}</td>
+		</tr>
+	</table>
+</div>

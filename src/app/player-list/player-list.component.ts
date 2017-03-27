@@ -11,6 +11,7 @@ import { PlayerService } from '../model/player.service';
 export class PlayerListComponent implements OnInit {
 
   players: Player[];
+  selectedPlayer: Player;
     
   constructor(private playerService:PlayerService) {
   this.players = this.playerService.getPlayers();    
@@ -19,4 +20,8 @@ export class PlayerListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSelect(player: Player) {
+      this.selectedPlayer = player;
+      }
+      
 }
